@@ -16,4 +16,5 @@
 .inkscape-etc
 .lesshst
 .serverauth.*
+.rvmrc
 .gitconfig.local
