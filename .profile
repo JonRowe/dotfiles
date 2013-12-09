@@ -57,7 +57,7 @@ export FLEX_HOME=/usr/local/flex/current/
 export PATH="/usr/local/heroku/bin:$PATH"
 
 #rvm
-export rvm_path='/Users/jon/.rvm'
+export rvm_path=$HOME/.rvm
 [[ -s "$rvm_path/scripts/rvm" ]] && source "$rvm_path/scripts/rvm"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
