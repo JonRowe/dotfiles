@@ -1,0 +1,5 @@
+--type-set=haml=.haml
+--type-set=cucumber=.feature
+--ignore-dir=logs/
+--ignore-dir=tmp/
+--ignore-dir=coverage/

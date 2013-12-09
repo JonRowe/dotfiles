@@ -1,0 +1,31 @@
+[include]
+  path = ~/.gitconfig.local
+[core]
+  editor = /usr/local/bin/mvim -v
+	autocrlf = input
+	excludesfile = /Users/jon/.gitignore_global
+[user]
+	name = Jon Rowe
+	email = hello@jonrowe.co.uk
+[ui]
+	color = true
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+  pub = ! git co gh-pages && git rebase master && git co master && git push
+  dc = diff --cached
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+  up = push
+  down = pull
+  patch = diff --no-prefix
+  plg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  pick = cherry-pick -n
+[push]
+	default = matching

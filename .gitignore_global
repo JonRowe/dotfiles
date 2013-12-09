@@ -1,0 +1,10 @@
+.DS_Store
+.wip
+.rvmrc
+.ruby-version
+.ruby-gemset
+.env
+.env.*
+.wally
+**/*.swp
+doc/tags
