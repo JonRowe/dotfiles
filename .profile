@@ -30,7 +30,6 @@ source ~/.git_complete
 export PS1='\W\[\033[1;36m\]`\__git_ps1`\[\033[0m\]\$ '
 
 alias clear="cat /dev/null >"
-alias git=hub
 
 #ruby tools
 alias cuke="bundle exec cucumber"
