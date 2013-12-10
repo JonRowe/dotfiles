@@ -38,6 +38,7 @@ alias be="bundle exec"
 alias gst="git st"
 alias rails="bundle exec rails"
 alias rr='git ls-files -mo --exclude-standard | grep _spec\.rb$ | xargs bundle exec rspec'
+alias rc='rvm-prompt v p g'
 
 export EDITOR='mvim -v'
 export NODE_PATH='/usr/local/lib/node'
