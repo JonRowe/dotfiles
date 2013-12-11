@@ -3,7 +3,7 @@
 [core]
   editor = /usr/local/bin/mvim -v
 	autocrlf = input
-	excludesfile = /Users/jon/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [user]
 	name = Jon Rowe
 	email = hello@jonrowe.co.uk
