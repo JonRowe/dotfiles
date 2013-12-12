@@ -18,3 +18,5 @@
 .serverauth.*
 .rvmrc
 .gitconfig.local
+.mongorc.js
+.dbshell
