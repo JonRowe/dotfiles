@@ -1,1 +1,0 @@
-/Users/jon/.vim/vimrc
