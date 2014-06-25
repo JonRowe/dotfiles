@@ -4,6 +4,7 @@
 .rvmrc
 .ruby-version
 .ruby-gemset
+.rspec-local
 .env
 .env.*
 .wally
