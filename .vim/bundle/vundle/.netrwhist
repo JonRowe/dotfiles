@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/jon/Code/Work/TheConversation/data-warehouse/lib/fact/loader'
-let g:netrw_dirhist_2='/Users/jon/.dotfiles/.vim/bundle/powerline/powerline'
-let g:netrw_dirhist_3='/Users/jon/.dotfiles/.vim/bundle/powerline'

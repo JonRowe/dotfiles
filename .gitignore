@@ -21,3 +21,4 @@
 .gitconfig.local
 .mongorc.js
 .dbshell
+.vim/bundle/vundle/.netrwhist
