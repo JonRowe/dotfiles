@@ -23,10 +23,10 @@ decrypt () {
   openssl aes-256-ecb -salt -in $1.enc -out $1 -d
 }
 auto_psql () {
-  if [ -e "./config/database.yml" ]
+  if [ -e "./config/database.yml" && $# -eq 0 ]
   then
     DB=`ruby -ryaml -e "puts YAML.load_file('./config/database.yml')[ENV.fetch('RACK_ENV','development')]['database']"`
-    /usr/local/bin/psql $DB $@
+    /usr/local/bin/psql $DB
   else
     /usr/local/bin/psql $@
   fi
