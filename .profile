@@ -60,6 +60,7 @@ alias tls='tmux ls'
 alias tn='tmux new -s'
 alias ts='tmuxinator start'
 alias to='tmuxinator open'
+alias rc='rvm current'
 
 export FLEX_HOME=/usr/local/flex/current/
 
