@@ -62,6 +62,8 @@ alias ts='tmuxinator start'
 alias to='tmuxinator open'
 alias rc='rvm current'
 
+alias brb='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
+
 export FLEX_HOME=/usr/local/flex/current/
 
 ### Added by the Heroku Toolbelt
