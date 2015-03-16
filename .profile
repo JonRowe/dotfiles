@@ -56,7 +56,7 @@ alias bling="CUCUMBER_FORMAT='pretty' bundle exec cucumber"
 alias be="bundle exec"
 alias gst="git st"
 alias rails="bundle exec rails"
-alias rr='git diff --diff-filter=ACMRTUXB --name-only  | grep _spec\.rb$ | xargs bundle exec rspec'
+alias rr='git ls-files -mo --exclude-standard | exists | grep _spec\.rb$ | xargs bundle exec rspec'
 alias rc='rvm-prompt v p g'
 
 export EDITOR='mvim -v'
