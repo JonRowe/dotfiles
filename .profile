@@ -16,6 +16,15 @@ tman () {
 bman () {
   man "${1}" | bcat
 }
+exists () {
+  while read var
+  do
+    if [ -f "./$var" ] || [ -f "$var" ]
+    then
+      echo "$var"
+    fi
+  done
+}
 encrypt () {
   openssl aes-256-ecb -salt -in $1 -out $1.enc
 }
