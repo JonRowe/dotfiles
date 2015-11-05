@@ -5,6 +5,7 @@ alias start_mongo="launchctl start homebrew.mxcl.mongodb"
 alias stop_mysql="launchctl stop homebrew.mxcl.mysql"
 alias stop_pg="launchctl stop homebrew.mxcl.postgresql"
 alias stop_mongo="launchctl stop homebrew.mxcl.mongodb"
+alias cls='printf "\033c"'
 
 #cmdline stuff
 pman () {
