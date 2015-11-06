@@ -58,6 +58,8 @@ alias be="bundle exec"
 alias gst="git st"
 alias rails="bundle exec rails"
 alias rr='git ls-files -mo --exclude-standard | exists | grep _spec\.rb$ | xargs bundle exec rspec'
+alias ro='rspec --only-failures'
+alias rn='rspec --next-failure'
 alias rc='rvm-prompt v p g'
 
 export EDITOR='mvim -v'
