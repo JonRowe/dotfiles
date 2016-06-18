@@ -13,6 +13,8 @@
 	diff = auto
 	status = auto
 	branch = auto
+[diff]
+  compactionHeuristic = true
 [alias]
   pub = ! git co gh-pages && git rebase master && git co master && git push
   dc = diff --cached
