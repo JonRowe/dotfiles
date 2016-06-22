@@ -17,6 +17,7 @@
   compactionHeuristic = true
 [alias]
   pub = ! git co gh-pages && git rebase master && git co master && git push
+  peek = stash show -p
   dc = diff --cached
   st = status
   ci = commit
