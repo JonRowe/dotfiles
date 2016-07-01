@@ -33,3 +33,5 @@
   pick = cherry-pick -n
 [push]
 	default = matching
+[rerere]
+	enabled = true
