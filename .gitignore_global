@@ -8,6 +8,7 @@
 .env
 .env.*
 .wally
+.database
 **/*.swp
 doc/tags
 /Users/jon/Code/Work/CarNextDoor/turbo/Procfile
