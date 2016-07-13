@@ -37,6 +37,9 @@ auto_psql () {
   then
     DB=`ruby -ryaml -e "puts YAML.load_file('./config/database.yml')[ENV.fetch('RACK_ENV','development')]['database']"`
     /usr/local/bin/psql $DB $@
+  elif [ -e '.database' ]
+  then
+    /usr/local/bin/psql `cat .database` $@
   else
     /usr/local/bin/psql $@
   fi
