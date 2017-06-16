@@ -8,6 +8,7 @@ alias stop_mongo="launchctl stop homebrew.mxcl.mongodb"
 alias cls='printf "\033c"'
 
 #cmdline stuff
+alias pretty_json='python -m json.tool'
 pman () {
   man -t "${1}" | open -f -a /Applications/Preview.app
 }
