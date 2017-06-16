@@ -92,7 +92,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export rvm_path=$HOME/.rvm
 [[ -s "$rvm_path/scripts/rvm" ]] && source "$rvm_path/scripts/rvm"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 
 #tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
