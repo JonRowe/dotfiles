@@ -17,6 +17,7 @@
 [diff]
   compactionHeuristic = true
 [alias]
+  aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /' | sort
   pub = ! git co gh-pages && git rebase master && git co master && git push
   peek = stash show -p
   dc = diff --cached
