@@ -125,6 +125,10 @@ fun! Start()
   call append('$', "  * Ctrl-T opens alternate files (test/code)")
   call append('$', "  * Ctrl-N does multiple curser")
   call append('$', "  * tab completion!")
+  call append('$', "")
+  call append('$', "Old Stuff you should remember!")
+  call append('$', "  * :Obsess <filename> to record sessions")
+  call append('$', "  * :source <filename> to load it")
 
   " No modifications to this buffer
   setlocal nomodifiable nomodified
