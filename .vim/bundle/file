@@ -1,6 +1,8 @@
 " Text transformation
 Plugin 'surround.vim'
 Plugin 'Align'
+Plugin 'salsifis/vim-transpose'
+
 " Adds end et al
 Plugin 'tpope/vim-endwise'
 
