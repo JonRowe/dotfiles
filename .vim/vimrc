@@ -49,6 +49,9 @@ set incsearch
 set ignorecase
 set smartcase
 
+" fzf fuzzy matching
+set rtp+=/usr/local/opt/fzf
+
 " Tab completion
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
