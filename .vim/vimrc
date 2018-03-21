@@ -40,9 +40,6 @@ set softtabstop=2
 set expandtab
 set list listchars=tab:\ \ ,trail:·
 
-" powerline
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-
 " Searching
 set hlsearch
 set incsearch
@@ -84,6 +81,8 @@ set iskeyword-=_
 set tabpagemax=100
 
 syntax enable
+let g:airline_powerline_fonts = 1
+let g:airline_theme='solarized'
 colorscheme solarized
 
 " ruby

@@ -13,7 +13,8 @@ Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-fugitive'
 
 " UI
-Plugin 'Lokaltog/powerline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'terryma/vim-multiple-cursors'
 
