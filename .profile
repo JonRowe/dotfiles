@@ -60,7 +60,7 @@ export PS1='\W\[\033[1;36m\]`\__git_ps1`\[\033[0m\]\$ '
 alias clear="cat /dev/null >"
 alias less='less -r'
 
-#ruby tools
+# ruby tools
 alias cuke="bundle exec cucumber"
 alias bling="CUCUMBER_FORMAT='pretty' bundle exec cucumber"
 alias be="bundle exec"
