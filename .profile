@@ -70,6 +70,39 @@ alias ro='rspec --only-failures'
 alias rn='rspec --next-failure'
 alias rc='rvm-prompt v p g'
 
+# elixir tools
+alias ism="iex -S mix"
+alias ismp="iex -S mix phx.start"
+alias mta="mix cmd mix test"
+alias mtr='git ls-files -mo --exclude-standard | exists | grep _test\.exs$ | xargs mix test '
+alias mdg="mix deps.get"
+alias mdu="mix deps.update"
+alias mf="mix format"
+alias mfa="git ls-files -mo --exclude-standard | exists | grep '\.exs\?$' | xargs mix format"
+alias mfc="git diff --cached --name-only | exists | grep '\.exs\?$' | xargs mix format"
+export ERL_AFLAGS="-kernel shell_history enabled"
+mt() {
+  if [ -e .current-app ]
+  then
+    pushd apps/`cat .current-app`; mix test $@; popd
+  else
+    mix test $@
+  fi
+}
+mts () {
+  if [ -z "${1}" ]
+  then
+    pushd apps/`cat .current-app`; mix test; popd
+  elif [ "${1}" == "all" ]
+  then
+    rm .current-app
+    mix test
+  else
+    echo "${1}" > .current-app
+    pushd apps/${1}; mix test; popd
+  fi
+}
+
 # git tools
 alias gst="git st"
 
