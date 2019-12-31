@@ -117,6 +117,7 @@ alias tn='tmux new -s'
 alias ts='tmuxinator start'
 alias to='tmuxinator open'
 alias rc='rvm current'
+alias brew="safe_brew"
 
 alias brb='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
 
