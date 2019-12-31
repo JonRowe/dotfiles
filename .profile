@@ -132,6 +132,9 @@ export rvm_path=$HOME/.rvm
 
 export PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 
+# RSpec
+export USE_GIT_REPOS=1
+
 #tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
