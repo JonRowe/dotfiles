@@ -7,6 +7,10 @@ alias stop_pg="launchctl stop homebrew.mxcl.postgresql"
 alias stop_mongo="launchctl stop homebrew.mxcl.mongodb"
 alias cls='printf "\033c"'
 
+export ITB="/Users/jon/Library/Application\ Support/IntoTheBreach/profile_Omega"
+alias backupITB="pushd $ITB > /dev/null; cp *.lua bak/; popd > /dev/null"
+alias restoreITB="pushd $ITB > /dev/null; cp bak/* .; popd;"
+
 #cmdline stuff
 alias pretty_json='python -m json.tool'
 pman () {
