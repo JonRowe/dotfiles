@@ -20,11 +20,12 @@ Plugin 'terryma/vim-multiple-cursors'
 
 " File opening
 Plugin 'bogado/file-line'
-Plugin 'compactcode/alternate.vim'
-Plugin 'compactcode/open.vim'
+" Plugin 'compactcode/alternate.vim'
+" Plugin 'compactcode/open.vim'
+Plugin 'tpope/vim-projectionist'
 
 " Language extentions
-Plugin 'elixir-lang/vim-elixir'
+Plugin 'elixir-editors/vim-elixir'
 Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-haml'
 Plugin 'AnsiEsc.vim'

@@ -92,9 +92,19 @@ let ruby_no_expensive = 1
 " Searching
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
+" Undo files use persistent history.
+if !isdirectory("/tmp/.vim-undo-dir")
+  call mkdir("/tmp/.vim-undo-dir", "", 0700)
+endif
+set undodir=/tmp/.vim-undo-dir
+set undofile
+
 " Key remaps
 " ctrl t opens tests
 map <C-T> :OpenVertical(alternate#FindAlternate())<CR>
+
+" Projectionist settings
+let g:projectionist_heuristics = json_decode(join(readfile(expand('~/.dotfiles/projections.json'))))
 
 " Startup screen customisation
 fun! Start()
