@@ -13,3 +13,7 @@
 doc/tags
 .overcommit.yml
 .current-app
+TODO
+timesheet.md
+notes.md
+ods_script.sql
