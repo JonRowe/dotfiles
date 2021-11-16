@@ -1,6 +1,10 @@
 set nocompatible
 setlocal spell spelllang=en_gb
 
+if !(isdirectory(expand("~/.vim/bundle/Vundle.vim")))
+  execute "! git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
+endif
+
 " Vundle config
 filetype off
 
