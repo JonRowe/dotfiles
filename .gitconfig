@@ -1,7 +1,7 @@
 [include]
   path = ~/.gitconfig.local
 [core]
-  editor = /usr/local/bin/mvim -v
+  editor = /opt/homebrew/bin/vim -v
 	autocrlf = input
 	excludesfile = ~/.gitignore_global
 [user]
