@@ -1,3 +1,4 @@
+.netrwhist
 backup
 bundle/vim-tmux-navigator
 bundle/vim-multiple-cursors
