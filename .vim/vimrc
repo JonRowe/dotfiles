@@ -30,6 +30,11 @@ filetype plugin indent on    " required
 set number
 set ruler
 syntax on
+
+" Tells vim to use the new regular expression engine which fixes tsx syntax
+" highlighting?
+set re=0
+
 " Status bar always shown?
 set laststatus=2
 
