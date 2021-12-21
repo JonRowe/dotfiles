@@ -76,6 +76,9 @@ set backspace=indent,eol,start
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
 " Directories for swp files
+if !(isdirectory(expand("~/.vim/backup")))
+   execute "! mkdir ~/.vim/backup"
+endif
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
