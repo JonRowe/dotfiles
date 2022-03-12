@@ -6,7 +6,7 @@
       "template": [
         "module {camelcase|capitalize|dot}",
         "end"
-      ],
+      ]
     },
     "spec/*_spec.rb": {
       "alternate": "lib/{}.rb",
@@ -14,8 +14,8 @@
       "template": [
         "RSpec.describe \"{camelcase|capitalize|dot}\" do",
         "end"
-      ],
-    },
+      ]
+    }
   },
   "lib/*.ex": {
     "lib/**/views/*_view.ex": {
