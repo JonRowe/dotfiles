@@ -8,6 +8,12 @@ Plugin 'tpope/vim-endwise'
 
 " Tab completion
 Plugin 'ervandew/supertab'
+Plugin 'prabirshrestha/asyncomplete.vim'
+
+" Language servers
+Plugin 'prabirshrestha/vim-lsp'
+Plugin 'prabirshrestha/asyncomplete-lsp.vim'
+Plugin 'mattn/vim-lsp-settings'
 
 " Git
 Plugin 'tpope/vim-fugitive'
