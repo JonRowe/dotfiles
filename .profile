@@ -48,7 +48,6 @@ auto_psql () {
     $PSQL $@
   fi
 }
-alias psql=auto_psql
 alias pg_ctl="/Users/jon/.asdf/installs/postgres/13.5/bin/pg_ctl -D /Users/jon/.asdf/installs/postgres/13.5/data -l  /Users/jon/.asdf/installs/postgres/13.5/logs/logfile $@"
 
 start_redis () {
