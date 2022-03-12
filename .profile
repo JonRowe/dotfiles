@@ -51,6 +51,11 @@ auto_psql () {
 alias psql=auto_psql
 alias pg_ctl="/Users/jon/.asdf/installs/postgres/13.5/bin/pg_ctl -D /Users/jon/.asdf/installs/postgres/13.5/data -l  /Users/jon/.asdf/installs/postgres/13.5/logs/logfile $@"
 
+start_redis () {
+  redis_version="$(ls ~/.asdf/installs/redis | sort | tail -n 1)"
+  ~/.asdf/installs/redis/$redis_version/bin/redis-server ~/.asdf/installs/redis/$redis_version/redis.conf
+}
+
 # ruby tools
 alias bundle="bundler"
 alias cuke="bundler exec cucumber"
