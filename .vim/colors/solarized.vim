@@ -232,7 +232,7 @@ endif
 let colors_name = "solarized"
 
 "}}}
-" GUI & CSApprox hexadecimal palettes"{{{
+" GUI & CSApprox hexadecimal palettes
 " ---------------------------------------------------------------------
 "
 " Set both gui and terminal color values in separate conditional statements
@@ -353,7 +353,7 @@ else
     let s:green       = "DarkGreen"     " 2
 
 endif
-"}}}
+
 " Formatting options and null values for passthrough effect "{{{
 " ---------------------------------------------------------------------
     let s:none            = "NONE"
