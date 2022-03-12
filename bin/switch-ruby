@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+root=$(pwd)
+
+dot_tool_versions_exists() {
+  [ -f '.tool-versions' ]
+}
+
+if dot_tool_versions_exists; then
+  current="$(cat .tool-versions | grep ruby | sed -e "s/ruby //")"
+  desired="$1"
+
+  if [[ "$current" == "$desired" ]]; then
+    echo "Nothing to do, already on $current";
+    exit 0;
+  else
+    echo "Switching from $current to $desired"
+    sed -i '' -e "s/ruby .*/ruby $desired/" .tool-versions
+    asdf install ruby
+    bundle config set --local path '.bundle/gems'
+    rm Gemfile.lock
+    bundle install
+  fi
+
+else
+  echo "No .tool-versions file exists, quitting"
+  exit 1;
+fi

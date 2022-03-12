@@ -106,7 +106,7 @@ mts () {
 alias gst="git st"
 
 export EDITOR='vim -v'
-export PATH=./bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=./bin:~/.dotfiles/bin/:/usr/local/bin:/usr/local/sbin:$PATH
 
 alias ta='tmux attach -t'
 alias tls='tmux ls'
