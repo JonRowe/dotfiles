@@ -19,6 +19,7 @@ if dot_tool_versions_exists; then
     echo "Switching from $current to $desired"
     sed -i '' -e "s/ruby .*/ruby $desired/" .tool-versions
     asdf install ruby
+    echo "Setting bundle path and reinstalling gems"
     bundle config set --local path '.bundle/gems'
     rm Gemfile.lock
     bundle install
