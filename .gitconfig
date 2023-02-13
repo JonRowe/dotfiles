@@ -74,6 +74,7 @@
 [pager]
   branch = false
 [push]
+  autoSetupRemote = true
   default = matching
   useForceIfIncludes = true
 [pull]
