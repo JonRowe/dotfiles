@@ -14,6 +14,7 @@
   patch = diff --no-prefix
   plg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   pick = cherry-pick -n
+  pr = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
 
   # From GBH
   amend = commit --amend --no-edit
