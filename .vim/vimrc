@@ -120,6 +120,9 @@ map <C-T> :OpenVertical(alternate#FindAlternate())<CR>
 " Projectionist settings
 let g:projectionist_heuristics = json_decode(join(readfile(expand('~/.dotfiles/projections.json'))))
 
+" LSP settings globally
+let g:lsp_settings_filetype_ruby = ['solargraph']
+
 " Startup screen customisation
 fun! Start()
   " Don't run if: we have commandline arguments, we don't have an empty
