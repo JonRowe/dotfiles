@@ -164,4 +164,7 @@ fun! Start()
   nnoremap <buffer><silent> i :enew <bar> startinsert<CR>
   nnoremap <buffer><silent> o :enew <bar> startinsert<CR>
 endfun
+
+" Automatically resize splits on resize
+autocmd VimResized * wincmd =
 autocmd VimEnter * call Start()
