@@ -63,14 +63,23 @@
   editor = /opt/homebrew/bin/nvim
   autocrlf = input
   excludesfile = ~/.gitignore_global
+  pager = delta
+[delta]
+  navigate = true    # use n and N to move between diff sections
+  light = true
 [diff]
+  colorMoved = default
   compactionHeuristic = true
 [include]
   path = ~/.gitconfig.local
 [init]
   defaultBranch = main
+[interactive]
+  diffFilter = delta --color-only
 [fetch]
   prune = true
+[merge]
+  conflictstyle = diff3
 [pager]
   branch = false
 [push]
