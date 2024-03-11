@@ -1,5 +1,13 @@
 {
   "spec/*.rb": {
+    "app/**/*.rb": {
+      "alternate": "spec/{}_spec.rb",
+      "type": "source",
+      "template": [
+        "RSpec.describe \"{camelcase|capitalize|dot}\" do",
+        "end"
+      ]
+    },
     "lib/*.rb": {
       "alternate": "spec/{}_spec.rb",
       "type": "source",
