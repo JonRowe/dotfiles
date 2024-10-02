@@ -48,7 +48,7 @@ auto_psql () {
     $PSQL $@
   fi
 }
-alias pg_ctl="/Users/jon/.asdf/installs/postgres/13.5/bin/pg_ctl -D /Users/jon/.asdf/installs/postgres/13.5/data -l  /Users/jon/.asdf/installs/postgres/13.5/logs/logfile $@"
+alias pg_ctl="/Users/jon/.asdf/installs/postgres/16.4/bin/pg_ctl -D /Users/jon/.asdf/installs/postgres/16.4/data -l  /Users/jon/.asdf/installs/postgres/16.4/logs/logfile $@"
 
 start_redis () {
   redis_version="$(ls ~/.asdf/installs/redis | sort | tail -n 1)"
