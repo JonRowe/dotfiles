@@ -100,3 +100,5 @@
   name = Jon Rowe
   email = hello@jonrowe.co.uk
   signingkey = D5137F0B
+[http]
+  postBuffer = 531288000
