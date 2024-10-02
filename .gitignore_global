@@ -19,3 +19,4 @@ notes.md
 ods_script.sql
 .tool-versions
 .elixir_ls
+.solargraph.yml
